@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paróquia São Francisco de Assis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+              <img src="img/logo.png" alt="Logo da Paróquia São Francisco de Assis">
+          </div>
+          <div class="site-title">
+            <h2 class="titulo-destaque"><a href="index.html" class="parish-link">Paróquia São Francisco de Assis</a></h2>
+            <p>Com a Paz e a Simplicidade de São Francisco</p>
+          </div>
+          <button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
+    
+          <nav class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="#">Sobre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="sobre.html">Paróquia</a></li>
+                        <li><a href="clero.html">O Clero</a></li>
+                        <li><a href="padroeiro.html">O Padroeiro</a></li>
+                    </ul>
+                </li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li>
+                    <a href="#">Pastorais</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pastorais.html">Pastorais</a></li>
+                        <li><a href="movimentos.html">Movimentos e Equipes</a></li>
+                        <li><a href="acoes.html">Ações Sociais</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="https://diocesedeguarulhos.org.br/">Diocese</a></li>
+            </ul>
+        </nav>
+    
+      </div>  
+    </header>
+    
+
+    <!-- Seção sobre a paróquia -->
+    <section class="about-parish">
+        <div class="texto-container">
+            <h2 class="titulo-destaque">Sobre a Paróquia São Francisco de Assis</h2>
+            <p style="text-align: justify;">A Paróquia São Francisco de Assis, localizada na Rua Francisco Polilo, 24, Gopoúva, Guarulhos - SP, 
+                foi fundada em 1957 e tem sido um pilar de fé e comunidade desde então. Sob a orientação do pároco Pe. Pedro Paulo
+                 e do vigário Pe. Leonardo Henrique, a paróquia oferece uma variedade de atividades religiosas e comunitárias.
+            </p>
+            <p style="text-align: justify;">A paróquia celebra seu padroeiro, São Francisco de Assis, no dia 4 de outubro, 
+                homenageando o santo conhecido por sua humildade, amor à natureza e dedicação aos mais necessitados.
+                 A comunidade é convidada a participar das diversas atividades e celebrações, fortalecendo a fé e a união 
+                 entre os fiéis.
+            </p>
+            <div class="imagem-container">
+                <img src="img/sfa_paroquia.png" alt="Foto da paroquia">
+            </div>
+
+        </div>
+    </section>
+
+<!-- Ícone do WhatsApp -->
+<a href="https://wa.me/551124082772" class="whatsapp-icon" target="_blank" aria-label="Entre em contato pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <footer>
+        <div class="container">
+            <h2 class="titulo-destaque">Paróquia São Francisco de Assis - Gopouva</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/saofranciscogopouva" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/saofranciscogopouva?igsh=MWNoNGNpdzNkYzV6bw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@paroquiasaofranciscodeassisgop" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+          const menu = document.querySelector('.menu');
+          menu.classList.toggle('active'); // Ativa ou desativa o menu no mobile
+      }
+      
+      // Adiciona funcionalidade de clique para exibir/ocultar submenus no mobile
+      document.querySelectorAll('.menu-list > li > a').forEach(link => {
+          link.addEventListener('click', function (e) {
+              const parentLi = this.parentElement;
+              const submenu = parentLi.querySelector('.dropdown-content');
+      
+              if (submenu) {
+                  e.preventDefault();
+                  parentLi.classList.toggle('open'); // Alterna a exibição do submenu
+              }
+          });
+      });
+      
+      
+      </script>
+      
+</body>
+</html>

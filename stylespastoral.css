@@ -1,0 +1,601 @@
+/* Estilo geral */
+
+/* Estilo para o título em destaque */
+.titulo-destaque {
+    font-family: 'Quintessential', cursive; /* Fonte destacada */
+    font-size: 26px; /* Tamanho do título */
+    font-weight: bold;
+    color: #412c05;/* Cor do título */
+    margin: 0; /* Remover margem */
+    text-align: center; /* Centraliza o título */
+}
+
+.titulo-destaque1 {
+    font-family: 'Quintessential', cursive; /* Fonte destacada */
+    font-size: 26px; /* Tamanho do título */
+    font-weight: bold;
+    color: white;/* Cor do título */
+    margin: 0; /* Remover margem */
+    text-align: center; /* Centraliza o título */
+}
+
+
+/* Estilo para a informação comum */
+.informacao-comum {
+    font-family: 'Arial', sans-serif; /* Fonte comum */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    text-align: center; /* Centraliza a informação */
+    margin: 10px 0 0 0; /* Espaço entre o título e a informação */
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #5c3c00;
+}
+
+.parish-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #5c3c00; /* Cor do texto do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.parish-link:hover {
+    color: #8e6f3f; /* Cor do link ao passar o mouse */
+}
+
+
+/* Cabeçalho fixo */
+header {
+    position: fixed; /* Torna o cabeçalho fixo no topo */
+    top: 0; /* Fixa no topo da página */
+    left: 0; /* Fixa a esquerda */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+    background-color: #D9C4A1;
+    border-bottom: 2px solid #5c3c00;
+    padding: 20px 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header .site-title {
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+header .site-title h1 {
+    font-size: 26px;
+    color: #5c3c00;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+header .site-title p {
+    font-size: 14px;
+    color: #8e6f3f;
+    margin: 0;
+}
+
+/* Ajuste no espaçamento do conteúdo para não ficar atrás do cabeçalho fixo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #5c3c00;
+    padding-top: 80px; /* Ajuste a altura conforme necessário para o seu cabeçalho */
+}
+
+/* Estilo para o menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    background-color: #D9C4A1;
+    color: #412c05;
+    font-weight: bold;
+}
+
+/* Menu dropdown */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #D9C4A1;
+    width: 200px;
+}
+
+nav .dropdown-content li {
+    display: block;
+}
+
+nav .dropdown-content a {
+    padding: 10px;
+    background-color: #D9C4A1;
+    color: #412c05;
+    font-weight: normal;
+}
+
+/* Efeito de hover no item de menu */
+nav ul li:hover > a {
+    background-color: #D9C4A1;
+}
+
+/* Efeito de hover nas opções do submenu */
+nav .dropdown-content a:hover {
+    background-color: #D9C4A1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 16px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #5c3c00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #8e6f3f;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #8e6f3f;
+    font-weight: bold;
+    border: 1px solid #8e6f3f;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-links a:hover {
+    background-color: #8e6f3f;
+    color: #fff;
+}
+
+
+
+/* Estilos do Rodapé e Ícones de Redes Sociais */
+footer {
+    background-color:#D9C4A1;
+    color: #412c05;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color:#412c05;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #6a4e23; /* Marrom escuro */
+}
+
+
+/* Container principal */
+.pastorais-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px; /* Move para baixo */
+    padding: 20px;
+    perspective: 1000px; /* Adiciona profundidade 3D */
+    background-color: white;
+  }
+  
+  /* Container individual */
+  /* Container principal */
+.pastorais-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaçamento ajustado */
+    margin-top: 50px;
+    padding: 20px;
+    perspective: 1000px;
+    background-color: white;
+  }
+  
+  /* Container individual */
+  .pastoral {
+    width: 23%; /* Largura dos cartões em telas grandes */
+    min-width: 150px; /* Define uma largura mínima para telas menores */
+    max-width: 250px; /* Define um limite de largura */
+    aspect-ratio: 3/3; /* Proporção do cartão (ajustável) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  
+  .pastoral-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  /* Animação no hover */
+  .pastoral:hover .pastoral-inner {
+    transform: rotateX(180deg);
+  }
+  
+  /* Frente e verso */
+  .pastoral-front, .pastoral-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column; /* Para alinhar palavra e imagem verticalmente */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    word-wrap: break-word; /* Quebra palavras longas automaticamente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Frente */
+  .pastoral-front {
+    background-color: #D9C4A1;
+  }
+  
+  .pastoral-front img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+  }
+  
+  /* Verso */
+  .pastoral-back {
+    background-color: #4b3621;
+    color: #fff;
+    transform: rotateX(180deg);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word; /* Quebra palavras longas automaticamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pastoral-back p {
+    word-wrap: break-word; /* Quebra palavras longas automaticamente */
+    overflow-wrap: break-word; /* Garante a quebra de palavras para navegadores modernos */
+    margin: 0; /* Remove margens indesejadas */
+}
+  
+  .pastoral-back img {
+    max-width: 80%; /* Ajusta o tamanho da imagem no verso */
+    border-radius: 8px;
+  }
+  
+
+  .texto-container {
+    max-width: 90%; /* Limita a largura do texto dentro da caixa */
+    margin: 0 auto; /* Centraliza a caixa na página */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; /* Compatibilidade com navegadores mais antigos */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse a caixa */
+    box-sizing: border-box; /* Inclui padding no tamanho total da caixa */
+}
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    z-index: 1000;
+}
+.whatsapp-icon:hover {
+    background-color: #22c35e;
+    cursor: pointer;
+}
+
+  /* CABEÇALHO RESPONSIVO */
+
+/* Botão do menu mobile */
+.mobile-menu-button {
+    display: none; /* Esconde por padrão */
+  }
+
+
+/* Estilo para links do menu */
+.menu a {
+    color: #412c05;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+/* Estilo base do menu */
+.menu {
+    display: flex;
+    gap: 1rem; /* Espaçamento horizontal entre os itens no desktop */
+  }
+  
+  .menu-list {
+    display: flex;
+    gap: 1rem; /* Espaçamento entre itens no desktop */
+  }
+  
+  .menu-list li {
+    position: relative;
+  }
+  
+  /* Dropdown no desktop */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+  }
+  
+  .menu-list li:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+
+    /* Botão do menu mobile */
+    .mobile-menu-button {
+    display: block; /* Exibe apenas no mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+    margin-left: auto; /* Alinha à direita */
+  }
+
+/* Estilo para links do menu */
+    .menu a {
+     color: #412c05;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+    .menu {
+      display: none;
+      flex-direction: column; /* Exibir itens na vertical */
+      background-color: white;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem;
+    }
+  
+    .menu.active {
+      display: flex; /* Exibir o menu ao ativar no mobile */
+    }
+  
+    .menu-list {
+      flex-direction: column; /* Lista de itens na vertical */
+      gap: 0.5rem; /* Espaçamento reduzido entre itens no mobile */
+    }
+  
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+    }
+  }
+
+
+
+
+  /* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Container principal */
+    .conteiner {
+        padding: 0 10px;
+    }
+
+    /* Títulos */
+    .titulo-destaque, 
+    .titulo-destaque1 {
+        font-size: 22px; /* Reduz o tamanho dos títulos */
+    }
+
+    /* Ajustes para o menu */
+    nav ul {
+        flex-direction: column; /* Alinha os itens na vertical */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    nav a {
+        padding: 8px 10px; /* Ajusta o espaçamento dos links */
+    }
+
+    /* Botão do menu mobile */
+    .mobile-menu-button {
+        display: block; /* Exibe o botão do menu no mobile */
+        background: none;
+        border: none;
+        font-size: 1.5rem; /* Define o tamanho do botão */
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column; /* Exibe itens na vertical */
+        background-color: #D9C4A1;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .menu.active {
+        display: flex; /* Exibe o menu ao ativar no mobile */
+    }
+
+    /* Cartões (pastorais) */
+    .pastorais-container {
+        flex-direction: column; /* Alinha os cartões verticalmente */
+        gap: 10px; /* Espaçamento entre os cartões */
+        padding: 10px;
+        position: relative;
+    }
+
+    .pastoral {
+        width: 70%; /* Ajusta os cartões para ocuparem a largura disponível */
+        max-width: none; /* Remove o limite de largura */
+    }
+
+    /* Textos dentro dos cartões */
+    .pastoral-front, 
+    .pastoral-back {
+        padding: 10px; /* Adiciona espaçamento interno */
+        font-size: 16px; /* Reduz o tamanho do texto */
+    }
+
+    .pastoral-front img,
+    .pastoral-back img {
+        max-width: 70%; /* Faz com que as imagens ocupem a largura do cartão */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 14px; /* Ajusta o tamanho do texto no rodapé */
+        padding: 15px; /* Reduz o padding */
+    }
+
+    footer .social-icons a {
+        font-size: 18px; /* Reduz o tamanho dos ícones sociais */
+        margin: 0 10px; /* Reduz o espaçamento entre ícones */
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Centralizar os cartões no mobile */
+    .pastorais-container {
+        display: flex;
+        flex-direction: column; /* Cartões em coluna */
+        justify-content: center; /* Alinha verticalmente ao centro */
+        align-items: center; /* Centraliza horizontalmente */
+        gap: 20px; /* Espaçamento entre os cartões */
+        min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+        padding: 10px;
+    }
+
+    .pastoral {
+        width: 90%; /* Ocupa 90% da largura da tela */
+        max-width: 300px; /* Define um limite de largura */
+        margin: 0 auto; /* Garante centralização horizontal adicional */
+    }
+
+    .pastoral-front,
+    .pastoral-back {
+        padding: 10px; /* Adiciona espaçamento interno */
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    .pastoral-front img,
+    .pastoral-back img {
+        max-width: 100%; /* Ajusta a largura da imagem ao cartão */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+  
